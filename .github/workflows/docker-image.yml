@@ -17,7 +17,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Construir la imagen Docker con Apache
-      run: docker build -t usuarioasir/mi-web-apache:1.0 .
+      run: docker build -t frmonzon/mi-web-apache:1.0 .
 
     - name: Subir la imagen a Docker Hub
-      run: docker push usuarioasir/mi-web-apache:1.0
+      run: docker push frmonzon/mi-web-apache:1.0
